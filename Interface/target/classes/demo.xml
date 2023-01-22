@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+	<bean id="demo" class="com.example.demo.Triangle">
+		<property name="name" ref="t1"></property>
+		<property name="yourname" ref="t2"></property>
+	</bean>
+
+	<bean id="t1" class="com.example.demo.Rectangle">
+		<property name="A" value="Hii"></property>
+		<property name="B" value="Hii"></property>
+	</bean>
+	
+	<bean id="t2" class="com.example.demo.Rectangle">
+		<property name="A" value="I am Triangle"></property>
+		<property name="B" value="I am Rectangle"></property>
+	</bean>
+	
+</beans>
